@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Cliente">
+            <fields>
+                <field type="TEXT" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="email" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="propostas" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Contrato">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="contratoAssociado" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Fatura">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Projeto">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Contrato" fetchType="LAZY" name="contrato" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Proposta">
+            <fields>
+                <field type="INTEGER" length="255" name="estado" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="necessidadesCliente" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aceite" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Suporte">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Contrato" fetchType="LAZY" name="contrato" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="numHorasSuporteRestante" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
