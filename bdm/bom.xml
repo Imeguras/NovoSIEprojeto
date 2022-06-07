@@ -38,8 +38,10 @@
         <businessObject qualifiedName="com.company.model.Proposta">
             <fields>
                 <field type="INTEGER" length="255" name="estado" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="necessidadesCliente" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="necessidadesCliente" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aceite" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="standard" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="propostaCliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
