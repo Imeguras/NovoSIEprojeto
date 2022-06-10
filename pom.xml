@@ -5,7 +5,7 @@
   <groupId>com.ipleiria.sie.departamentoei.net</groupId>
   <artifactId>projetosiebonitaversion</artifactId>
   <version>0.0.1</version>
-  <name>SIEprojeto</name>
+  <name>SIE_Projeto</name>
   <description>non standard description</description>
   <properties>
     <bonita.runtime.version>7.14.0</bonita.runtime.version>
