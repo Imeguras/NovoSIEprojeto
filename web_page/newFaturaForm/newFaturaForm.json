@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "newFaturaForm",
   "name" : "newFaturaForm",
-  "lastUpdate" : 1654820096103,
+  "lastUpdate" : 1654874249425,
   "rows" : [
     [
       {
@@ -208,27 +208,31 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "readOnly" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
+                        "maxLength" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : ""
                         },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -236,30 +240,22 @@
                           "type" : "interpolation",
                           "value" : "Descricao"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "top"
                         },
-                        "dimension" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : 1
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "fatura.descricao"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "0a0c9e52-f555-49a8-b483-c8fc1459e548",
+                      "reference" : "f039ee67-8ebf-4d23-8af3-2b6278fddc19",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbTextarea"
                     }
                   ]
                 ]
