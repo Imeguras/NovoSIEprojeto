@@ -14,6 +14,7 @@
         <businessObject qualifiedName="com.company.model.Contrato">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="contratoAssociado" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="emVigor" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

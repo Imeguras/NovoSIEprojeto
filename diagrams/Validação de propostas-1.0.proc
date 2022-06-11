@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_U2-ewOjtEey9fvVsXH7ZRw" name="Validação de propostas" author="tomas" bonitaVersion="7.14.0" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_U2-ewejtEey9fvVsXH7ZRw" name="Validação de propostas">
       <elements xmi:type="process:Lane" xmi:id="_U2-ewujtEey9fvVsXH7ZRw" name="Diretor comercial" actor="_U2-e2-jtEey9fvVsXH7ZRw"/>
-      <elements xmi:type="process:Lane" xmi:id="_hzBecOjtEey9fvVsXH7ZRw" name="Comercial">
+      <elements xmi:type="process:Lane" xmi:id="_hzBecOjtEey9fvVsXH7ZRw" name="Comercial" actor="_U2-e2-jtEey9fvVsXH7ZRw">
         <elements xmi:type="process:Task" xmi:id="_U2-ex-jtEey9fvVsXH7ZRw" name="Step1" incoming="_U2-e2OjtEey9fvVsXH7ZRw" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_U2-eyOjtEey9fvVsXH7ZRw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_U2-eyejtEey9fvVsXH7ZRw" name="" content="" returnTypeFixed="true"/>
