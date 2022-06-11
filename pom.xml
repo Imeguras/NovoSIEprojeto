@@ -5,7 +5,7 @@
   <groupId>com.ipleiria.sie.departamentoei.net</groupId>
   <artifactId>projetosiebonitaversion</artifactId>
   <version>0.0.1</version>
-  <name>SIEprojeto</name>
+  <name>SIE_Projeto</name>
   <description>non standard description</description>
   <properties>
     <bonita.runtime.version>7.14.0</bonita.runtime.version>
@@ -93,6 +93,36 @@
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-servlet</artifactId>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-initiator</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-initiator-manager</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-custom-user-info</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-same-task-user</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-single-user</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-user-manager</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.company.model</groupId>

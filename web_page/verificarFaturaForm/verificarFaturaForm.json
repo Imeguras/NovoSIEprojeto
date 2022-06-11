@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "verificarFaturaForm",
   "name" : "verificarFaturaForm",
-  "lastUpdate" : 1654819183071,
+  "lastUpdate" : 1654873611833,
   "rows" : [
     [
       {
@@ -179,7 +179,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{ context.fatura.description }}"
+                    "value" : "{{fatura.descricao}}"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -467,6 +467,14 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "fatura" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.fatura_ref.link}}"
+      ],
+      "advancedOptions" : { },
       "exposed" : false
     }
   },

@@ -21,7 +21,7 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Fatura">
             <fields>
-                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="validada" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
