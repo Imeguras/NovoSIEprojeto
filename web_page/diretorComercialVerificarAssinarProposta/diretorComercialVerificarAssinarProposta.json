@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "diretorComercialVerificarAssinarProposta",
   "name" : "diretorComercialVerificarAssinarProposta",
-  "lastUpdate" : 1654962172463,
+  "lastUpdate" : 1654965390223,
   "rows" : [
     [
       {
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -269,6 +270,55 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!proposta.standard"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Standard"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "proposta.standard"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "357f874e-3210-41bc-8913-d3491f709029",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
@@ -324,55 +374,6 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!proposta.standard"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Standard"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "proposta.standard"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "357f874e-3210-41bc-8913-d3491f709029",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
                         "md" : 12,
@@ -397,7 +398,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validar?"
+                          "value" : "Validar"
                         },
                         "value" : {
                           "type" : "variable",
@@ -421,11 +422,11 @@
                       "propertyValues" : {
                         "cssClasses" : {
                           "type" : "constant",
-                          "value" : "formulario_rawInputs.validar==false"
+                          "value" : ""
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "formulario_rawInputs.validar==false"
                         },
                         "readOnly" : {
                           "type" : "constant",
@@ -449,7 +450,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Default label"
+                          "value" : "Assinatura"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -658,7 +659,7 @@
       "value" : [
         "if( $data.proposta ){",
         "    if($data.formulario_rawInputs.validar){",
-        "        $data.proposta.estado+=100;",
+        "        $data.proposta.estado=111; ",
         "    }",
         "    if($data.formulario_rawInputs.assinatura){",
         "        $data.proposta.estado+=1000;",
