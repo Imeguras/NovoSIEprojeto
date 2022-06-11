@@ -34,7 +34,8 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_EoN--ejyEey9fvVsXH7ZRw"/>
         <condition xmi:type="expression:Expression" xmi:id="_EoN--ujyEey9fvVsXH7ZRw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_EoN---jyEey9fvVsXH7ZRw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_EoN---jyEey9fvVsXH7ZRw" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
+      <actors xmi:type="process:Actor" xmi:id="_6DaDcOmNEeyPVP3R0lqKzw" name="Comercial" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_EoN-_OjyEey9fvVsXH7ZRw"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_EoN-_ejyEey9fvVsXH7ZRw">
         <name xmi:type="expression:Expression" xmi:id="_EoN-_ujyEey9fvVsXH7ZRw" content="" returnTypeFixed="true"/>
