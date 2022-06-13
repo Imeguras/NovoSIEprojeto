@@ -54,8 +54,10 @@ funciona como flags(a soma destes numeros indica estados diferentes
                 <field type="TEXT" length="255" name="necessidadesCliente" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aceite" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="standard" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="propostaCliente" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="pretendeNovaProposta" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="propostaComercial" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="propostaTecnica" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="requesitos" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
