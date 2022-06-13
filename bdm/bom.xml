@@ -15,6 +15,9 @@
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="contratoAssociado" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="emVigor" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="numHorasContrato" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="numHorasRealizado" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="precoBase" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -24,6 +27,7 @@
             <fields>
                 <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="validada" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Contrato" fetchType="LAZY" name="contrato" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -32,6 +36,8 @@
         <businessObject qualifiedName="com.company.model.Projeto">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Contrato" fetchType="LAZY" name="contrato" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="totalEntregaveis" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="entregaveis" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -58,7 +64,6 @@ funciona como flags(a soma destes numeros indica estados diferentes
         <businessObject qualifiedName="com.company.model.Suporte">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Contrato" fetchType="LAZY" name="contrato" nullable="false" collection="false"/>
-                <field type="FLOAT" length="255" name="numHorasSuporteRestante" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
