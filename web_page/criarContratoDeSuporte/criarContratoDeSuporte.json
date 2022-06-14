@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "criarContratoDeSuporte",
   "name" : "criarContratoDeSuporte",
-  "lastUpdate" : 1655224075425,
+  "lastUpdate" : 1655242665256,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "52e5bff4-fa60-4ca0-a58c-bee48fcbecdc",
+        "reference" : "549186a1-e204-4e0e-b344-f78ea5a9ec2d",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "89eb120e-540f-4009-bc9d-7eed4886c2fd",
+              "reference" : "d89fe582-2b2a-46da-9879-8835b12cf1e5",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "53fa3abc-6c85-4f1d-b5c7-fc8f736cfeec",
+              "reference" : "d8ae9ee5-b596-4407-b9b8-17b3e6f747ba",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2d98fdab-a8a9-45be-abb6-c1266e443dc5",
+        "reference" : "fab8b10a-4d56-4c94-8b7f-a048a07f8a2c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "93ab1501-59ae-4c9a-8810-5922116b1e44",
+          "reference" : "58cb82c9-3a30-491e-901f-36be7b9cdd1f",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "b9d3a99a-f4c1-4565-a2ff-224df856284d",
+                "reference" : "af4a3379-9aad-4410-a401-953512758e64",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e06edd40-54f7-431d-b617-267d3648a79e",
+                "reference" : "cb379e77-3397-4bff-a945-8e3db08c6b04",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -208,55 +208,607 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "level" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : "Level 4"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "proposta_query"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "label" : {
+                        "text" : {
                           "type" : "interpolation",
                           "value" : "Contrato Associado"
                         },
-                        "placeholder" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "Select a Contrato Associado"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.contratoInput.contratoAssociado"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "eaafe281-eaa0-4da8-b87c-2a1f483d9ea9",
+                      "reference" : "e313c80c-7a03-4432-895c-39a459a8bba5",
                       "hasValidationError" : false,
-                      "id" : "pbSelect",
+                      "id" : "pbTitle",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "repeatedCollection" : {
+                          "type" : "variable"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "d52cbaa2-1390-4a07-b229-572389393190",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "proposta_query"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Contrato Associado"
+                              },
+                              "placeholder" : {
+                                "type" : "constant",
+                                "value" : "Select a Contrato Associado"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "contrato_contratoAssociado"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "7493cfc2-d0ad-4c3b-8883-0eac0b0319ea",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.estado"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Estado"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.estado}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "7f9a9b30-c41a-484c-987e-b50874bcbb81",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.necessidadesCliente"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Necessidades Cliente"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.necessidadesCliente}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "bb1ffdf1-a617-4b01-8620-a89868a180f2",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.aceite"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Aceite"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "contrato_contratoAssociado.aceite"
+                              }
+                            },
+                            "reference" : "5cbdd846-2a2a-4bae-b396-8203f5e8fd24",
+                            "hasValidationError" : false,
+                            "id" : "pbCheckbox",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.standard"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Standard"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "contrato_contratoAssociado.standard"
+                              }
+                            },
+                            "reference" : "a5e2448c-b03c-4d1f-bfee-06c410ea8b3e",
+                            "hasValidationError" : false,
+                            "id" : "pbCheckbox",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.pretendeNovaProposta"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Pretende Nova Proposta"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "contrato_contratoAssociado.pretendeNovaProposta"
+                              }
+                            },
+                            "reference" : "163bb2a4-f403-42f3-b052-72c9889ef62b",
+                            "hasValidationError" : false,
+                            "id" : "pbCheckbox",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.propostaComercial"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Proposta Comercial"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.propostaComercial}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "d4678bb3-aaad-4120-9d82-62bb75ef41c0",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.propostaTecnica"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Proposta Tecnica"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.propostaTecnica}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "20f50832-f2ca-433c-aab3-26d1c7690def",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.requesitos"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Requesitos"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.requesitos}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "2b4f59af-44ea-4708-9bc0-cc77ec3a83df",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.precoBase"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Preco Base"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.precoBase}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "7b9f949e-5418-4112-90db-71b8f272cc91",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!contrato_contratoAssociado.numHoras"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Num Horas"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{contrato_contratoAssociado.numHoras}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "e224d677-b866-4f04-9925-7109ffc99a92",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ]
+                      ]
                     }
                   ],
                   [
@@ -295,10 +847,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.contratoInput.emVigor"
+                          "value" : "contrato.emVigor"
                         }
                       },
-                      "reference" : "07c6b5f1-95ea-47ed-868b-c36da9f63e97",
+                      "reference" : "8bb6d491-8793-4639-bace-8a4e7cfcc373",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -355,14 +907,32 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.contratoInput.numHorasRealizado"
+                          "value" : "contrato.numHorasRealizado"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "17aa48ea-04c5-4c39-aa60-3718bc52cbfd",
+                      "reference" : "41e51c95-afce-4dd6-a4ff-3ccf4b9b5a96",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -442,7 +1012,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "38630c71-0848-44ba-85cf-447b498b36ca",
+                "reference" : "5cd7f16f-036b-4a77-b038-e143b604608c",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -494,7 +1064,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3370cbe3-ea6d-4562-aa61-9dd164c8a7a0",
+                "reference" : "4f24cc56-c056-4685-bc55-7aaf854bf1e0",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -507,14 +1077,14 @@
   ],
   "assets" : [
     {
-      "id" : "4f856c67-1505-4b29-8eef-4cb181e684f3",
+      "id" : "ceddf8f6-f368-4daa-8432-ef5a998addc5",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1f71a9c3-5020-4099-9c25-e98b28f42e0f",
+      "id" : "49327d39-47ca-42c8-9583-1bc67cad4763",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -537,21 +1107,6 @@
       ],
       "exposed" : false
     },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"contratoInput\" : {\r",
-        "    \"contratoAssociado\" : {\r",
-        "      \"persistenceId_string\" : \"\"\r",
-        "    },\r",
-        "    \"emVigor\" : false,\r",
-        "    \"numHorasRealizado\" : 0\r",
-        "  }\r",
-        "}"
-      ],
-      "exposed" : false
-    },
     "submit_errors_list" : {
       "type" : "expression",
       "value" : [
@@ -570,8 +1125,19 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tcontratoInput: $data.formInput.contratoInput",
+        "if( $data.contrato && $data.contrato_contratoAssociado ){",
+        "\t//attach lazy references variables to parent variables",
+        "\t$data.contrato.contratoAssociado = $data.contrato_contratoAssociado;",
+        "\treturn {",
+        "\t\t//map contrato variable to expected task contract input",
+        "\t\tcontratoInput: {",
+        "\t\t\tcontratoAssociado: $data.contrato.contratoAssociado ? {",
+        "\t\t\t\tpersistenceId_string: $data.contrato.contratoAssociado.persistenceId_string !== undefined ? $data.contrato.contratoAssociado.persistenceId_string : null",
+        "\t\t\t} : null,",
+        "\t\t\temVigor: $data.contrato.emVigor !== undefined ? $data.contrato.emVigor : null,",
+        "\t\t\tnumHorasRealizado: $data.contrato.numHorasRealizado !== undefined ? $data.contrato.numHorasRealizado : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -583,16 +1149,30 @@
       ],
       "exposed" : false
     },
+    "contrato" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.contrato_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
         "id"
       ],
       "exposed" : false
+    },
+    "contrato_contratoAssociado" : {
+      "type" : "url",
+      "value" : [
+        "{{contrato|lazyRef:'contratoAssociado'}}"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "6319dfa2-36d1-476a-babf-8e7283833c4d",
+  "uuid" : "deed12e4-71c6-4aa7-9153-eabdbfe084ae",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
