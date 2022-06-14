@@ -15,9 +15,7 @@
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="contratoAssociado" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="emVigor" nullable="false" collection="false"/>
-                <field type="FLOAT" length="255" name="numHorasContrato" nullable="true" collection="false"/>
                 <field type="FLOAT" length="255" name="numHorasRealizado" nullable="true" collection="false"/>
-                <field type="DOUBLE" length="255" name="precoBase" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
