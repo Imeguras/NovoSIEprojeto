@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "necessidadesCliente",
-  "name" : "necessidadesCliente",
-  "lastUpdate" : 1654966857890,
+  "id" : "registarContacto",
+  "name" : "registarContacto",
+  "lastUpdate" : 1655222458056,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "f0b2eeee-6357-4a90-89ce-20e2742574f2",
+        "reference" : "250af2e3-30b2-4d1f-8432-0f16ac59828a",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "9dab1ee3-6ae1-4ec4-bd46-8756f6677390",
+              "reference" : "d7f8a2a4-63c6-4c17-b5d5-ab0fcfc88929",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a8b192dd-7011-48a5-a77d-f7731c0c893e",
+              "reference" : "c4840aaa-5728-4a6f-877e-035692a50886",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "250262cb-a254-4b8b-a0cb-0d4a41d20a19",
+        "reference" : "818f4890-d448-4e5d-94fd-08a2c0521789",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "d59987d2-d652-4c64-a19c-e1b26f2983f6",
+          "reference" : "df369e57-2f14-4cca-85d0-8853b04bfcae",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Proposta"
+                    "value" : "Cliente Contacto"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9949c8e9-2489-4704-8926-31665f68baee",
+                "reference" : "125c7482-eccd-4815-bd78-cae678e028e7",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,7 +179,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -194,7 +195,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "b6342fe2-c773-45ca-996a-c5ce25512218",
+                "reference" : "13a1ef36-17cb-4890-8a9e-b47b69841b9c",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -234,7 +235,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Necessidades Cliente"
+                          "value" : "Nome"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -249,11 +250,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.propostaInput.necessidadesCliente"
+                          "value" : "clienteContacto.nome"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -274,7 +275,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "a808b069-d58f-4260-9f24-dc9f9b02361c",
+                      "reference" : "8577f94a-db4f-4dfa-aa6b-5cd40c2af2ff",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -298,17 +299,32 @@
                           "type" : "constant",
                           "value" : false
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "disabled" : {
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Standard"
+                          "value" : "Email"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -316,16 +332,16 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.propostaInput.standard"
+                          "value" : "clienteContacto.email"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "8bada4c4-50e0-409c-b2f3-0cb2e3a6826f",
+                      "reference" : "4e6d81be-6f83-42f0-8950-260861d7447f",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ]
@@ -403,7 +419,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9cf55d98-1fec-49af-a980-f74acc976025",
+                "reference" : "0b978544-bebc-4ed5-957a-5a2098073142",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -455,7 +471,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c28f7f65-f2e8-4bac-9ea2-39b24c553ce8",
+                "reference" : "c74965ee-0ce6-458b-a247-09aa9766a04d",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -468,16 +484,16 @@
   ],
   "assets" : [
     {
-      "id" : "13afb56c-d04e-42d7-b13c-0f005f23e75d",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "c60b06c2-f3d2-4911-a5d2-e30d866c366f",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "3a755096-3558-4237-b493-1fdac4160d9e",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "f73e5dc0-02af-43ce-ac57-81509c749019",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -488,18 +504,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{",
-        "  \"propostaInput\" : {",
-        "    \"necessidadesCliente\" : \"\",",
-        "    \"standard\" : false",
-        "  }",
-        "}"
       ],
       "exposed" : false
     },
@@ -521,8 +525,16 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tpropostaInput: $data.formInput.propostaInput",
+        "if( $data.clienteContacto && $data.clienteContacto_propostas ){",
+        "\t//attach lazy references variables to parent variables",
+        "\t$data.clienteContacto.propostas = $data.clienteContacto_propostas;",
+        "\treturn {",
+        "\t\t//map clienteContacto variable to expected task contract input",
+        "\t\tclienteContactoInput: {",
+        "\t\t\tnome: $data.clienteContacto.nome !== undefined ? $data.clienteContacto.nome : null,",
+        "\t\t\temail: $data.clienteContacto.email !== undefined ? $data.clienteContacto.email : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -531,6 +543,20 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "clienteContacto_propostas" : {
+      "type" : "url",
+      "value" : [
+        "{{clienteContacto|lazyRef:'propostas'}}"
+      ],
+      "exposed" : false
+    },
+    "clienteContacto" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.clienteContacto_ref.link}}"
       ],
       "exposed" : false
     },
@@ -543,7 +569,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7b875c5f-70cb-42bd-ae38-22f90b85703f",
+  "uuid" : "39d76578-0bd7-46c3-9ca8-0ebdbabf41e2",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
