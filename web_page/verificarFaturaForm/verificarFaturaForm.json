@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "verificarFaturaForm",
   "name" : "verificarFaturaForm",
-  "lastUpdate" : 1655133433223,
+  "lastUpdate" : 1655224382193,
   "rows" : [
     [
       {
@@ -179,52 +179,16 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{fatura.descricao}}"
+                    "value" : "<h2>Detalhes sobre o contrato:\n<h3>Dados base:</h3>\nNumero de horas do contrato: {{ contrato.contratoAssociado.numHoras }}\n<br>\nNúmero de horas realizadas: {{ contrato.numHorasRealizado }} <br>\nPreço base: {{ contrato.contratoAssociado.precoBase }}\n<br/>\n<h3>Requisitos:</h3>\n{{ contrato.contratoAssociado.requesitos }}\n<h3>Proposta técnica:</h3>\n{{ contrato.contratoAssociado.propostaTecnica }}\n\n<h3>Proposta comercial:</h3>\n{{ contrato.contratoAssociado.propostaComercial }}"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
                   }
                 },
-                "reference" : "b8e08f0e-ee3b-4762-8478-a4575e54f69d",
+                "reference" : "68192fe6-0fb4-4813-9afc-f281f561c636",
                 "hasValidationError" : false,
                 "id" : "pbText"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Detalhes do contrato:"
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 3"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "7aa3fc20-7047-4ad1-bfff-a4c0e9e75b6a",
-                "hasValidationError" : false,
-                "id" : "pbTitle"
               }
             ],
             [
@@ -267,14 +231,14 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Numero de horas do contrato: {{ contrato.numHorasContrato }}\n<br>\nNúmero de horas realizadas: {{ contrato.numHorasRealizado }} <br>\nPreço base: {{ contrato.precoBase }}"
+                    "value" : "<h2>Fatura:</h2>\n{{fatura.descricao}}"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
                   }
                 },
-                "reference" : "68192fe6-0fb4-4813-9afc-f281f561c636",
+                "reference" : "b8e08f0e-ee3b-4762-8478-a4575e54f69d",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }

@@ -132,7 +132,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_jthNIusaEeyoz6i3WYomWw" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_iDJn8OsYEeyoz6i3WYomWw" name="Equipa de Projeto">
+      <elements xmi:type="process:Lane" xmi:id="_iDJn8OsYEeyoz6i3WYomWw" name="Equipa de Projeto" actor="_dhMz--phEeyyfed1KYwsHA">
         <elements xmi:type="process:Task" xmi:id="_dhMz5-phEeyyfed1KYwsHA" name="Desenvolvimento do próximo entregável" outgoing="_r9p8wOppEeyyfed1KYwsHA" incoming="_dhMz-OphEeyyfed1KYwsHA _4Da0sOppEeyyfed1KYwsHA _Z4nNgOpqEeyyfed1KYwsHA" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_dhMz6OphEeyyfed1KYwsHA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_dhMz6ephEeyyfed1KYwsHA" name="" content="" returnTypeFixed="true"/>

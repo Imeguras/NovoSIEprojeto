@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "newFaturaForm",
   "name" : "newFaturaForm",
-  "lastUpdate" : 1655131916590,
+  "lastUpdate" : 1655223485917,
   "rows" : [
     [
       {
@@ -337,7 +337,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Numero de horas do contrato: {{ contrato.numHorasContrato }}\n<br>\nNúmero de horas realizadas: {{ contrato.numHorasRealizado }} <br>\nPreço base: {{ contrato.precoBase }}"
+                    "value" : "Numero de horas do contrato: {{ contrato.contratoAssociado.numHoras }}\n<br>\nNúmero de horas realizadas: {{ contrato.numHorasRealizado }} <br>\nPreço base: {{ contrato.contratoAssociado.precoBase }}"
                   },
                   "alignment" : {
                     "type" : "constant",
