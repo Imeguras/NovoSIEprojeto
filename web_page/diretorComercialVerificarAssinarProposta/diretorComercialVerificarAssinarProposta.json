@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "diretorComercialVerificarAssinarProposta",
   "name" : "diretorComercialVerificarAssinarProposta",
-  "lastUpdate" : 1654965390223,
+  "lastUpdate" : 1655234823508,
   "rows" : [
     [
       {
@@ -328,8 +328,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!proposta.propostaCliente"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -337,11 +337,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Proposta Cliente"
+                          "value" : "Proposta Total"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{proposta.propostaCliente}}"
+                          "value" : "{{proposta.propostaTecnica}}\n{{proposta.propostaComercial}}\n{{proposta.requesitos}}"
                         },
                         "alignment" : {
                           "type" : "constant",

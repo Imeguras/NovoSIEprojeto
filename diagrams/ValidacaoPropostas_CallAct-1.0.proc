@@ -12,14 +12,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Xfj7KOisEeyY7twnxZVfVg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Xfj7KeisEeyY7twnxZVfVg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Xfj7KuisEeyY7twnxZVfVg" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_XCy14OjIEeyDkPgaIkGQtQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_XCy14ejIEeyDkPgaIkGQtQ" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XCy14ujIEeyDkPgaIkGQtQ" name="proposta" dataType="_Xfj7VOisEeyY7twnxZVfVg" className="com.company.model.Proposta"/>
+          <operations xmi:type="expression:Operation" xmi:id="_LzHpoOwDEeyfXvhyq7QCPw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_LzHpoewDEeyfXvhyq7QCPw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LzHpouwDEeyfXvhyq7QCPw" name="proposta" dataType="_Xfj7VOisEeyY7twnxZVfVg" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_XCy14-jIEeyDkPgaIkGQtQ" name="propostaInput.estado" content="propostaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_XCy15OjIEeyDkPgaIkGQtQ" name="propostaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_LzHpo-wDEeyfXvhyq7QCPw" name="propostaInput.estado" content="propostaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_LzHppOwDEeyfXvhyq7QCPw" name="propostaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_XCy15ejIEeyDkPgaIkGQtQ" type="JAVA_METHOD" expression="setEstado">
+            <operator xmi:type="expression:Operator" xmi:id="_LzHppewDEeyfXvhyq7QCPw" type="JAVA_METHOD" expression="setEstado">
               <inputTypes>java.lang.Integer</inputTypes>
             </operator>
           </operations>
@@ -32,8 +32,8 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_1eILMOitEeyJMP-s-tOVLg" name="comercialVerificarAssinarProposta" content="2bf9f145-bebc-4138-9b9f-8c27657361f7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Xfj7MuisEeyY7twnxZVfVg">
-            <inputs xmi:type="process:ContractInput" xmi:id="_XCxnwOjIEeyDkPgaIkGQtQ" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_XCxnwejIEeyDkPgaIkGQtQ" name="estado" type="INTEGER" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_LzHCkOwDEeyfXvhyq7QCPw" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_LzHCkewDEeyfXvhyq7QCPw" name="estado" type="INTEGER" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Xfj7M-isEeyY7twnxZVfVg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -54,14 +54,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_7WiNUemPEeywdt134RHfZA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_7WiNUumPEeywdt134RHfZA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_7WiNU-mPEeywdt134RHfZA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_hins4OmbEeyMqd6LEPIn3Q">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_hins4embEeyMqd6LEPIn3Q" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_h7sUMOmbEeyMqd6LEPIn3Q" name="proposta" dataType="_Xfj7VOisEeyY7twnxZVfVg" className="com.company.model.Proposta"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Ps-3IuwDEeyfXvhyq7QCPw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ps-3I-wDEeyfXvhyq7QCPw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ps-3JOwDEeyfXvhyq7QCPw" name="proposta" dataType="_Xfj7VOisEeyY7twnxZVfVg" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_hins4umbEeyMqd6LEPIn3Q" name="newScript()" content="propostaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_qxKgEOmbEeyMqd6LEPIn3Q" name="propostaInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ps-3JewDEeyfXvhyq7QCPw" name="propostaInput.estado" content="propostaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ps-3JuwDEeyfXvhyq7QCPw" name="propostaInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_hins4-mbEeyMqd6LEPIn3Q" type="JAVA_METHOD" expression="setEstado">
+            <operator xmi:type="expression:Operator" xmi:id="_Ps-3J-wDEeyfXvhyq7QCPw" type="JAVA_METHOD" expression="setEstado">
               <inputTypes>java.lang.Integer</inputTypes>
             </operator>
           </operations>
@@ -74,8 +74,8 @@
             <targetForm xmi:type="expression:Expression" xmi:id="_hp3I4OmREeywdt134RHfZA" name="diretorComercialVerificarAssinarProposta" content="9dcd4baf-0547-4564-8757-0ffdb23e70e7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_7WiNYemPEeywdt134RHfZA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_7WiNYumPEeywdt134RHfZA" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_7WiNY-mPEeywdt134RHfZA" name="estado" type="INTEGER" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Ps-3IOwDEeyfXvhyq7QCPw" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ps-3IewDEeyfXvhyq7QCPw" name="estado" type="INTEGER" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_7WiNZOmPEeywdt134RHfZA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -172,7 +172,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_Xfj7W-isEeyY7twnxZVfVg" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_Xfj7XOisEeyY7twnxZVfVg" type="3005" element="_Xfj7J-isEeyY7twnxZVfVg" fontName="Nunito" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_Xfj7XeisEeyY7twnxZVfVg" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xfj7XuisEeyY7twnxZVfVg" x="160" y="60" width="164" height="82"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xfj7XuisEeyY7twnxZVfVg" x="160" y="65" width="164" height="82"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_Xfj7X-isEeyY7twnxZVfVg" type="3002" element="_Xfj7I-isEeyY7twnxZVfVg" fontName="Nunito">
               <children xmi:type="notation:DecorationNode" xmi:id="_Xfj7YOisEeyY7twnxZVfVg" type="5024">

@@ -269,7 +269,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_LKfUSOu_Eeynq-9Qm3735A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_LKfUR-u_Eeynq-9Qm3735A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ME346uu_Eeynq-9Qm3735A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_YzhcIOvHEeynq-9Qm3735A" name="nonStandardComercialProposta" content="71308792-768a-49fe-b8be-aed17be35ade" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_-H1Z0OwMEeyEGo2XQFEjNQ" name="coomMercial" content="f7a8d166-9ada-4824-aa87-a7dbcb72d5ed" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ME346eu_Eeynq-9Qm3735A">
             <inputs xmi:type="process:ContractInput" xmi:id="_b-qFIOv4EeyfXvhyq7QCPw" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
