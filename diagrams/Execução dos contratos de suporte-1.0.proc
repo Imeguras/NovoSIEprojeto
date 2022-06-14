@@ -88,16 +88,19 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_S6qN8utcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_S6qN8etcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_S6qN8-tcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_3ZPnoOwcEeyBZo1aUSwfhQ" name="00:00:00" content="0L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
         </elements>
         <elements xmi:type="process:IntermediateCatchTimerEvent" xmi:id="_W-l9cOtcEeyjLrRwWYeshg" name="Timer2" outgoing="_b01ToOtcEeyjLrRwWYeshg" incoming="_W-qO4OtcEeyjLrRwWYeshg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_W-mkgetcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_W-mkgOtcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_W-mkgutcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_5Pn6cOwcEeyBZo1aUSwfhQ" name="180 Days 00:00:00" content="15552000000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
         </elements>
         <elements xmi:type="process:IntermediateCatchTimerEvent" xmi:id="_YPsY8OtcEeyjLrRwWYeshg" name="Timer3" outgoing="_bBfyMOtcEeyjLrRwWYeshg" incoming="_YPwqYOtcEeyjLrRwWYeshg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_YPtAAetcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_YPtAAOtcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_YPtAAutcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_CtSuwOwdEeyBZo1aUSwfhQ" name="00:00:00" content="0L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_bBcH0OtcEeyjLrRwWYeshg" name="End1" incoming="_bBfyMOtcEeyjLrRwWYeshg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_bBcu4etcEeyjLrRwWYeshg" name="" content="" returnTypeFixed="true"/>
@@ -300,7 +303,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_S6q1AutcEeyjLrRwWYeshg" type="5032">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_S6q1A-tcEeyjLrRwWYeshg" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S6q1AetcEeyjLrRwWYeshg" x="554" y="164"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S6q1AetcEeyjLrRwWYeshg" x="557" y="168"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_W-mkg-tcEeyjLrRwWYeshg" type="3017" element="_W-l9cOtcEeyjLrRwWYeshg" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_W-mkhetcEeyjLrRwWYeshg" type="5032">
