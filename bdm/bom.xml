@@ -58,6 +58,8 @@ funciona como flags(a soma destes numeros indica estados diferentes
                 <field type="TEXT" length="255" name="propostaComercial" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="propostaTecnica" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="requesitos" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="precoBase" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="numHoras" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
