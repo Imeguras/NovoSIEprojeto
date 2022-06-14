@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "propostaStandardElaborar",
   "name" : "propostaStandardElaborar",
-  "lastUpdate" : 1655047901593,
+  "lastUpdate" : 1655225074778,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "73deb576-dd04-4201-a08c-1faea268852f",
+        "reference" : "35b9f3be-13a9-431f-ae12-ba0e15598fdb",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "864241f2-ffe7-41a6-899f-151ed7876248",
+              "reference" : "b7547ed2-48ca-4db6-9d4c-a45ddc2a6e52",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "44815d19-26b7-48ea-8810-81162e7bfeb5",
+              "reference" : "4f596f43-1c9a-4109-9a17-eac4702f0ec6",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6bd29c43-0310-4cc7-b747-6bf872d698a7",
+        "reference" : "0cc57ab8-951d-4d6e-a799-be3aff4b7a5c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "33655c5f-af9a-475d-b4ea-5136f358cd2f",
+          "reference" : "a0479dd1-66bb-461a-a829-fe3242b1b1dd",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "83e9987f-f060-402a-80c4-aad90c854182",
+                "reference" : "0f8668e8-678c-4678-b200-7a066368a2b2",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "620ac701-a5cd-492f-9c1a-e2c487881c32",
+                "reference" : "353a07be-dd28-4215-816c-89d43ac2185f",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -241,7 +241,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "76b6c8f1-805b-4af8-9b03-ca25ce18ce89",
+                      "reference" : "dbaab91c-c8f7-4254-a028-a05f667bcddd",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -290,7 +290,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "5c2149f1-2a46-4057-b7f5-6609e43c429d",
+                      "reference" : "c3665120-5c36-40bc-aeb3-cd841d10be8f",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -352,27 +352,9 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "42aeb63f-98b5-4636-9c5f-64c4b913e384",
+                      "reference" : "87144c70-3fdf-4276-bf35-c853ec150faf",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -434,27 +416,9 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "f17ea9ff-4141-484c-8263-d1c1b230c6a0",
+                      "reference" : "2d269817-5301-4be5-9ae7-988b441f12d5",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -516,27 +480,137 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "0407500f-b36c-4c59-b856-72bf1a9ded35",
+                      "reference" : "fc7ab3a1-f3dc-4499-9399-b81a2d4c3291",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Preco Base"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "proposta.precoBase"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "77e9ce2f-b3b5-4a6f-8aa7-8f7bdacc76fc",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Num Horas"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "proposta.numHoras"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "52968f9b-4c59-4aff-88c4-cc6a7fbbb9c4",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -616,7 +690,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "794f18ef-e5be-41c3-89cd-110648aee982",
+                "reference" : "b6cfbfce-a06b-43ad-a338-b8b1ee121d97",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -668,7 +742,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "8110232a-7a98-4435-b289-4ed6ee82eb3e",
+                "reference" : "1458934e-60cb-4bbc-8825-692492effe28",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -681,14 +755,14 @@
   ],
   "assets" : [
     {
-      "id" : "e78e1136-402f-4e77-885d-1fb81a51c58f",
+      "id" : "626dd140-4d75-4de5-9fcd-160ee0b12364",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b0ab168a-1035-4c9f-827d-c97970ca6864",
+      "id" : "8865871e-55a0-415d-9195-b4edfefa2a68",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -735,7 +809,9 @@
         "\t\tpropostaInput: {",
         "\t\t\tpropostaComercial: $data.proposta.propostaComercial !== undefined ? $data.proposta.propostaComercial : null,",
         "\t\t\tpropostaTecnica: $data.proposta.propostaTecnica !== undefined ? $data.proposta.propostaTecnica : null,",
-        "\t\t\trequesitos: $data.proposta.requesitos !== undefined ? $data.proposta.requesitos : null",
+        "\t\t\trequesitos: $data.proposta.requesitos !== undefined ? $data.proposta.requesitos : null,",
+        "\t\t\tprecoBase: $data.proposta.precoBase !== undefined ? $data.proposta.precoBase : null,",
+        "\t\t\tnumHoras: $data.proposta.numHoras !== undefined ? $data.proposta.numHoras : null",
         "\t\t}",
         "\t}",
         "}"
@@ -758,7 +834,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "afffe0da-141c-4db9-8346-5881c1a64279",
+  "uuid" : "77f38cae-6ea2-430d-8469-cbddb07a021c",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
