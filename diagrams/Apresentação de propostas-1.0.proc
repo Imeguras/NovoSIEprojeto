@@ -27,6 +27,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_b2Uu8ujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_b2Uu8ejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_b2Uu8-jLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_hvrJEewaEeyphOgqNpw_FA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_hvrJEuwaEeyphOgqNpw_FA" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hvrJE-waEeyphOgqNpw_FA" name="proposta" dataType="_3VKfVOjKEeyK4qn2JJDTww" className="com.company.model.Proposta"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_hvrJFOwaEeyphOgqNpw_FA" name="propostaInput.aceite" content="propostaInput?.aceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_hvrJFewaEeyphOgqNpw_FA" name="propostaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_hvrJFuwaEeyphOgqNpw_FA" type="JAVA_METHOD" expression="setAceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_b2Uu9OjLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_b2Uu9ejLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_b2Uu9ujLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -38,20 +49,29 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_fM_IyujLEeyK4qn2JJDTww">
             <targetForm xmi:type="expression:Expression" xmi:id="_fM_Iy-jLEeyK4qn2JJDTww" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_fM_IyejLEeyK4qn2JJDTww"/>
+          <contract xmi:type="process:Contract" xmi:id="_fM_IyejLEeyK4qn2JJDTww">
+            <inputs xmi:type="process:ContractInput" xmi:id="_hvqiAOwaEeyphOgqNpw_FA" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_hvrJEOwaEeyphOgqNpw_FA" name="aceite" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_fM_IzOjLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndMessageEvent" xmi:id="_poYJkOjLEeyK4qn2JJDTww" name="O cliente aceitou a proposta inicial" incoming="_pofeUOjLEeyK4qn2JJDTww">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_poYJkujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_poYJkejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_poYJk-jLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
-          <events xmi:type="process:Message" xmi:id="_GBKL8OjrEey5KoLHc0LBXw" name="Cliente aceitou proposta inicial">
+          <events xmi:type="process:Message" xmi:id="_GBKL8OjrEey5KoLHc0LBXw" name="clienteAceitouPropostaInicial">
             <correlation xmi:type="process:Correlation" xmi:id="_GBKL8ejrEey5KoLHc0LBXw">
               <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_GBKL8ujrEey5KoLHc0LBXw"/>
             </correlation>
             <targetProcessExpression xmi:type="expression:Expression" xmi:id="_GBKL8-jrEey5KoLHc0LBXw" name="Angariação de clientes de suporte" content="Angariação de clientes de suporte" returnTypeFixed="true"/>
             <targetElementExpression xmi:type="expression:Expression" xmi:id="_GBKL9OjrEey5KoLHc0LBXw" name="O cliente aceitou a proposta inicial" content="O cliente aceitou a proposta inicial" returnTypeFixed="true"/>
-            <messageContent xmi:type="expression:TableExpression" xmi:id="_GBKL9ejrEey5KoLHc0LBXw"/>
+            <messageContent xmi:type="expression:TableExpression" xmi:id="_GBKL9ejrEey5KoLHc0LBXw">
+              <expressions xmi:type="expression:ListExpression" xmi:id="_-zUecOwaEeyphOgqNpw_FA">
+                <expressions xmi:type="expression:Expression" xmi:id="_-zUecewaEeyphOgqNpw_FA" name="clienteAceitouPropostaInicial" content="clienteAceitouPropostaInicial" returnTypeFixed="true"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_-zUecuwaEeyphOgqNpw_FA" name="true" content="true"/>
+              </expressions>
+            </messageContent>
           </events>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_tAYnMOjLEeyK4qn2JJDTww" name="Propor ao cliente criação de uma nova proposta" outgoing="_r1aB0OjLEeyK4qn2JJDTww" incoming="_qLbMQOjLEeyK4qn2JJDTww" overrideActorsOfTheLane="false">
@@ -73,6 +93,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_r1W-gejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_r1W-gOjLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_r1W-gujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_mbNrIOwaEeyphOgqNpw_FA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mbNrIewaEeyphOgqNpw_FA" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mbNrIuwaEeyphOgqNpw_FA" name="proposta" dataType="_3VKfVOjKEeyK4qn2JJDTww" className="com.company.model.Proposta"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mbNrI-waEeyphOgqNpw_FA" name="propostaInput.pretendeNovaProposta" content="propostaInput?.pretendeNovaProposta" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mbNrJOwaEeyphOgqNpw_FA" name="propostaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mbNrJewaEeyphOgqNpw_FA" type="JAVA_METHOD" expression="setPretendeNovaProposta">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_r1W-g-jLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_r1W-hOjLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_r1W-hejLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -84,13 +115,26 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_ujCsyujLEeyK4qn2JJDTww">
             <targetForm xmi:type="expression:Expression" xmi:id="_ujCsy-jLEeyK4qn2JJDTww" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_ujCsyejLEeyK4qn2JJDTww"/>
+          <contract xmi:type="process:Contract" xmi:id="_ujCsyejLEeyK4qn2JJDTww">
+            <inputs xmi:type="process:ContractInput" xmi:id="_mbNEEOwaEeyphOgqNpw_FA" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_mbNEEewaEeyphOgqNpw_FA" name="pretendeNovaProposta" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ujCszOjLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_2Gw84OjLEeyK4qn2JJDTww" name="Trocar estado da negociação para fechado" outgoing="_66PS8OjLEeyK4qn2JJDTww" incoming="_2G0nQOjLEeyK4qn2JJDTww _2sYycOjLEeyK4qn2JJDTww _8s1R8OjLEeyK4qn2JJDTww">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_2Gxj8ejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_2Gxj8OjLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_2Gxj8ujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_qXRRAOwaEeyphOgqNpw_FA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_qXRRAewaEeyphOgqNpw_FA" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qwfpUOwaEeyphOgqNpw_FA" name="proposta" dataType="_3VKfVOjKEeyK4qn2JJDTww" className="com.company.model.Proposta"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_qXRRAuwaEeyphOgqNpw_FA" name="11111" content="11111"/>
+            <operator xmi:type="expression:Operator" xmi:id="_qXRRA-waEeyphOgqNpw_FA" type="JAVA_METHOD" expression="setEstado">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_2Gxj8-jLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_2Gxj9OjLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_2Gxj9ejLEeyK4qn2JJDTww" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -101,26 +145,36 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_93qGUujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_93qGUejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_93qGU-jLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
-          <events xmi:type="process:Message" xmi:id="_DtKJAOjrEey5KoLHc0LBXw" name="Cliente pretende nova proposta">
+          <events xmi:type="process:Message" xmi:id="_DtKJAOjrEey5KoLHc0LBXw" name="clientePretendeNovaProposta">
             <correlation xmi:type="process:Correlation" xmi:id="_DtKJAejrEey5KoLHc0LBXw">
               <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_DtKJAujrEey5KoLHc0LBXw"/>
             </correlation>
             <targetProcessExpression xmi:type="expression:Expression" xmi:id="_DtKJA-jrEey5KoLHc0LBXw" name="Angariação de clientes de suporte" content="Angariação de clientes de suporte" returnTypeFixed="true"/>
             <targetElementExpression xmi:type="expression:Expression" xmi:id="_DtKJBOjrEey5KoLHc0LBXw" name="O cliente pretende uma nova proposta" content="O cliente pretende uma nova proposta" returnTypeFixed="true"/>
-            <messageContent xmi:type="expression:TableExpression" xmi:id="_DtKJBejrEey5KoLHc0LBXw"/>
+            <messageContent xmi:type="expression:TableExpression" xmi:id="_DtKJBejrEey5KoLHc0LBXw">
+              <expressions xmi:type="expression:ListExpression" xmi:id="_DSL2cOwbEeyphOgqNpw_FA">
+                <expressions xmi:type="expression:Expression" xmi:id="_DSL2cewbEeyphOgqNpw_FA" name="clientePretendeNovaProposta" content="clientePretendeNovaProposta" returnTypeFixed="true"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_DSL2cuwbEeyphOgqNpw_FA" name="true" content="true"/>
+              </expressions>
+            </messageContent>
           </events>
         </elements>
         <elements xmi:type="process:EndMessageEvent" xmi:id="_GG5yIOjsEey9fvVsXH7ZRw" name="Negociação falhou" incoming="_66PS8OjLEeyK4qn2JJDTww">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_66M2sejLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_66M2sOjLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_66M2sujLEeyK4qn2JJDTww" name="" content="" returnTypeFixed="true"/>
-          <events xmi:type="process:Message" xmi:id="_A4dMwOjrEey5KoLHc0LBXw" name="Negociação falhou">
+          <events xmi:type="process:Message" xmi:id="_A4dMwOjrEey5KoLHc0LBXw" name="negociacaoFalhou">
             <correlation xmi:type="process:Correlation" xmi:id="_A4dMwejrEey5KoLHc0LBXw">
               <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_A4dMwujrEey5KoLHc0LBXw"/>
             </correlation>
             <targetProcessExpression xmi:type="expression:Expression" xmi:id="_A4dMw-jrEey5KoLHc0LBXw" name="Angariação de clientes de suporte" content="Angariação de clientes de suporte" returnTypeFixed="true"/>
             <targetElementExpression xmi:type="expression:Expression" xmi:id="_A4dMxOjrEey5KoLHc0LBXw" name="Negociação falhou" content="Negociação falhou" returnTypeFixed="true"/>
-            <messageContent xmi:type="expression:TableExpression" xmi:id="_A4dMxejrEey5KoLHc0LBXw"/>
+            <messageContent xmi:type="expression:TableExpression" xmi:id="_A4dMxejrEey5KoLHc0LBXw">
+              <expressions xmi:type="expression:ListExpression" xmi:id="_A2Kf8OwbEeyphOgqNpw_FA">
+                <expressions xmi:type="expression:Expression" xmi:id="_A2Kf8ewbEeyphOgqNpw_FA" name="negociacaoFalhou" content="negociacaoFalhou" returnTypeFixed="true"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_A2Kf8uwbEeyphOgqNpw_FA" name="true" content="true"/>
+              </expressions>
+            </messageContent>
           </events>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_U-eQ0OmQEeyPVP3R0lqKzw" name="Cliente aceitou a proposta?" outgoing="_pofeUOjLEeyK4qn2JJDTww _qLbMQOjLEeyK4qn2JJDTww" incoming="_ojgzQOjLEeyK4qn2JJDTww">
@@ -158,7 +212,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_pofeUOjLEeyK4qn2JJDTww" name="Sim" target="_poYJkOjLEeyK4qn2JJDTww" source="_U-eQ0OmQEeyPVP3R0lqKzw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_pofeUejLEeyK4qn2JJDTww"/>
         <condition xmi:type="expression:Expression" xmi:id="_pofeUujLEeyK4qn2JJDTww" name="verificarPropostaAceite()" content="proposta.aceite == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8V4VAOmQEeyPVP3R0lqKzw" name="proposta" dataType="_3VKfVOjKEeyK4qn2JJDTww" className="com.company.model.Proposta"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_j5swoOwaEeyphOgqNpw_FA" name="proposta" dataType="_3VKfVOjKEeyK4qn2JJDTww" className="com.company.model.Proposta"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_qLbMQOjLEeyK4qn2JJDTww" name="Não" target="_tAYnMOjLEeyK4qn2JJDTww" source="_U-eQ0OmQEeyPVP3R0lqKzw">
